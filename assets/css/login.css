@@ -1,0 +1,180 @@
+
+.container-signUp {
+  margin-top: 5%;
+  width: 600px;
+  height: 500px;
+  margin-right: 30%;
+  text-align: center;
+  background-color: #c6c8ca ;
+  float: right;
+  position: relative;
+}
+.container-signIn {
+  top: 0;
+  left: 0;
+  width: 600px;
+  height: 500px;
+  margin-right: 30%;
+  text-align: center;
+  background-color: #c6c8ca ;
+  float: right;
+  visibility: hidden;
+  position: absolute;
+}
+
+.left-part {
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 1%;
+  width: 39%;
+  height: 450px;
+  background-color: #4CAF50;
+}
+
+.graduate-img {
+  width: 60%;
+  height: 30%;
+  background-color: #1e7e34;
+  border-radius: 50%;
+  margin-top: 30%;
+}
+
+.signup-text {
+  text-align: center;
+  direction: rtl;
+  margin-top: 20%;
+  color: #ffffff;
+}
+
+.text1 {
+  text-align: center;
+  direction: rtl;
+  margin: 10%;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.left-arrow {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-top: 30%;
+  background-color: #4e555b;
+}
+
+.right-part {
+  float: right;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 1%;
+  width: 59%;
+  height: 450px;
+  background-color: #ffffff;
+  text-align: right;
+  direction: rtl;
+}
+
+.input-pass {
+  margin-right: 5%;
+  width: 80%;
+  height: 5%;
+  border-bottom-color: #4e555b;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-top-style: hidden;
+}
+
+.alert {
+  margin-bottom: 8%;
+  color: red;
+}
+
+.input-email {
+  margin-right: 5%;
+  width: 80%;
+  height: 5%;
+  border-bottom-color: #4e555b;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-top-style: hidden;
+
+}
+.input-email2 {
+  margin-right: 5%;
+  margin-top:30% ;
+  width: 80%;
+  height: 5%;
+  border-bottom-color: #4e555b;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-top-style: hidden;
+
+}
+.input-name {
+  margin-bottom: 15%;
+  margin-right: 5%;
+  width: 80%;
+  height: 5%;
+  border-bottom-color: #4e555b;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-top-style: hidden;
+}
+.input-name:focus{
+  outline-style: none;
+  border-bottom-color: green;
+}
+.input-email:focus{
+  outline-style: none;
+  border-bottom-color: green;
+}
+.input-email2:focus{
+  outline-style: none;
+  border-bottom-color: green;
+}
+.input-pass:focus{
+  outline-style: none;
+  border-bottom-color: green;
+}
+.label {
+  margin-top: 10%;
+  margin-right: 13%;
+  font-size: 10px;
+}
+
+.button1 {
+  margin-top: 10%;
+  margin-right: 75px;
+  width: 200px;
+  height: 30px;
+  color: #ffffff;
+  background-color: #4CAF50;
+  font-size: 12px;
+}
+
+.button2 {
+  margin-right: 75px;
+  margin-top: 3%;
+  width: 200px;
+  height: 30px;
+  color: #ffffff;
+  background-color: #ff0000;
+  font-size: 12px;
+}
+.button3 {
+  margin-right: 75px;
+  margin-top: 1%;
+  width: 200px;
+  height: 30px;
+  color: black;
+  background-color: #ffffff;
+  font-size: 12px;
+  outline-style: none;
+  border-style: none;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
