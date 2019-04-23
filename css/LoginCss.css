@@ -1,0 +1,66 @@
+
+body{
+    margin-top: 90px;
+
+}
+
+.inline{
+    display: inline;
+}
+.button{
+    margin-bottom: 40px;
+
+}
+.top-nav{
+    background-color: #3797AC;
+    color: white;
+    text-align: center;
+    direction: rtl;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom:10%;
+
+}
+.control{
+
+    margin: auto;
+    box-shadow: 5px 5px 5px 5px #3797AC ;
+    width:1000px ;
+
+
+}
+.form{
+    margin-right: 10px;
+    margin-top: 40px;
+    text-align: right;
+    max-width: 800px;
+    width: 50%;
+    position: relative;
+    /*float: right;*/
+}
+
+#picture{
+    position: relative;
+    float: left;
+    margin:40px;
+    margin-top: 80px;
+    width: 40%;
+
+}
+input[type='file'] {
+    color: transparent;
+    margin-left: -140px;
+    margin-top: 10px;
+}
+#date-time{
+    width: 80px;
+    color: white;
+    height: 20px;
+}
+#paragraph{
+    text-align: center;
+}
+
+#par{
+    text-align: center;
+}
