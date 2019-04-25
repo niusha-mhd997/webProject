@@ -1,0 +1,41 @@
+#zerothdiv{
+    text-align: right;
+    height: 100%;
+}
+
+#profile{
+    text-align: center;
+    margin-top: 15%;
+    width: 100%;
+}
+.active{
+    background-color: aqua;
+}
+.fa-bars:hover {
+    cursor: pointer;
+}
+@font-face {
+    src: url("/font/IRANSans.ttf");
+    font-family: "iran sans";
+}
+:not(.fa) {
+    font-family: "iran sans";
+}
+#verNav{
+    background-color: #3797AC;
+    position: fixed;
+    z-index: 10;
+    height: 100%;
+}
+
+@media (max-width: 576px) {
+    #verNav {
+        position: static;
+        display: none;
+    }
+}
+
+.fa-bars:hover {
+    cursor: pointer;
+}
+
