@@ -7,7 +7,7 @@
   <meta name="description" content="">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -15,9 +15,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
 
-  <link rel="stylesheet" type="text/css" href="css/AddCase.css"/>
-  <script src="js/addcasejs.js"></script>
-
+  <link rel="stylesheet" type="text/css" href="css/bauti.css"/>
+  <link rel="stylesheet" type="text/css" href="style/global.css"/>
 
 
 </head>
@@ -45,12 +44,11 @@
       <p style="color: white; text-align: center ; margin-top: 20px">احسان رزازیان</p>
     </div>
 
-    <ul id="leftlist">
+    <ul>
 
       <li>همه موارد</li>
       <li><a href="manager.html" style="color: white ">مدیریت کاربران </a></li>
-      <li><a href="profileEdit.html" style="color: white">ویرایش پروفایل</a></li>
-      <li class="active">ارسال درخواست</li>
+      <li class="active"><a href="profileEdit.html" style="color: white">ویرایش پروفایل</a></li>
       <li>تایید کاربران</li>
       <li> مشاهده وضعیت موارد</li>
       <!--<li>  </li>-->
@@ -72,7 +70,7 @@
   <br>
 
 <span >
-      در این قسمت میتوانید شکایات و انتقادات و پیشنهادات و درخواست های خود را با مسوولین مربوطه دانشکده مطرح فرمایید. پس از انتخاب مسوول مربوطه درخواست خود را ثبت کنید. در صورت نیاز میتوانید فایل نیز آپلود کنید.
+      در این قسمت میتوانید شکایات و انتقادات و پیشنهادات و درخواست های خود را با مسوولین مربوطه دانشکده مطرح فرمایید. پس از انتخاب مسوول مربوطه درخواست خود را ثبت کنید.
 </span>
 
   <br>
@@ -117,15 +115,16 @@
 
 <div id="forthdiv" >
 
-  <p>
+  <span>
     کاربر مسؤول رسیدگی را انتخاب کنید:
-  </p>
+  </span>
 
-  <ul id="asami" >
+  <ul id="asami">
 
 
   </ul>
 
+  <br>
   <br>
 
   <div id="forthdiv2" >
@@ -136,13 +135,95 @@
 
 
 
+
+
+<div class="row">
+
+
+  <div class="col-6" style="background: #cc0000">
+
+  </div>
+
+
+
+  <div class="col-6" style="background: #00cc00">
+
+  </div>
+
+
+</div>
+
   </div>
 
 
 </div>
 
 
-<script>
+
+<script type="text/javascript">
+
+  function myFunction() {
+
+    var toppings = ["آقای امینی مسوول آزمایشگاه", "آقای یزدی مسوول سایت", "خانم رضایی مسوول آموزش",
+      "خانم اصفهانی مسوول کلاس ها"];
+
+    var ul = document.getElementById("asami");
+
+    for (var i = 0; i < toppings.length; i++) {
+      var topping2 = toppings[i];
+
+      var topping = " " + toppings[i];
+
+      var listItem = document.createElement("li");
+      listItem.tabindex="1";
+
+      var divItem = document.createElement("div");
+      divItem.className="cases-item-li";
+      divItem.ID="listdiv";
+
+      var imgItem = document.createElement("img");
+      imgItem.className="imgc";
+      imgItem.style="background: #00cc00";
+      imgItem.src="icon.png";
+
+
+      var spanItem = document.createElement("span");
+      spanItem.style="color: #0b2e13";
+      spanItem.innerHTML = topping;
+
+
+      divItem.appendChild(imgItem);
+      divItem.appendChild(spanItem);
+
+      listItem.appendChild(divItem);
+
+      ul.appendChild(listItem);
+
+
+    /*<li>
+
+      <div class="cases-item-li">
+        <img src="icon.png" style="background: #00cc00" class="imgc">
+        <span style="color: #0b2e13">
+        عکس اول
+      </span>
+      </div>
+
+      </li>*/
+
+
+    }
+
+
+
+
+  }
+
+  var mozoo;
+  var matn;
+  var file;
+  var masool_name;
+
 
   document.getElementById('asami').addEventListener('click', function(e) {
     var selected;
@@ -151,12 +232,50 @@
       selected= document.querySelector('div.selected');
       if(selected) selected.className= 'cases-item-li';
       e.target.className= 'selected';
+      //alert(e.target.getElementsByTagName("span")[0].innerHTML);
       masool_name = e.target.getElementsByTagName("span")[0].innerHTML;
     }
+
+
+
   });
 
-</script>
 
+  function myNewFunction(sel) {
+    mozoo = sel.options[sel.selectedIndex].text;
+  }
+
+
+
+  function send() {
+
+    matn = document.getElementById('matn_eteraz').value;
+
+    alert(masool_name);
+
+  }
+
+
+
+
+  function date(){
+    n = new Date();
+    y = n.getFullYear();
+    m = n.getMonth() + 1;
+    d = n.getDate();
+    h=n.getHours();
+    min=n.getMinutes();
+    document.getElementById("date-time").innerHTML = m + "/" + d + "/" + y +"&nbsp &nbsp &nbsp" + h+" : "+min;
+  }
+
+  function show() {
+    var elem = document.getElementById("verNav");
+    elem.style.display = "block";
+    document.getElementById("menubar").style.display="none";
+  }
+
+
+</script>
 
 
 
