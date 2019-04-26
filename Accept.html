@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="http://beyamooz.com/try_it_yourself/bootstrap/bootstrap-rtl.min_.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/accept.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="js/js2.js"></script>
+    <link rel="stylesheet" href="css/studentPage.css">
+    <link rel="stylesheet" href="css/global.css">
+    <title>َAccept</title>
+</head>
+<body>
+<div class="global">
+
+    <div id="verNav" class="col-md-3 d-md-block d-sm-none">
+
+        <div id="profile" class="container">
+            <img src="https://img.icons8.com/cotton/230/000000/name.png" id="imgc">
+        </div>
+
+
+
+        <div id="username">
+            <p style="color: white; text-align: center ; margin-top: 15px; font-size: large">مهرنوش شمس فرد</p>
+        </div>
+
+        <ul>
+
+
+            <li><a href="ManagerPage.html" style="color: white; font-size: large">صفحه اصلی</a></li>
+            <li ><a href="OthersCases.html" style="color: white; font-size: large">مشاهده موارد دیگر کاربران</a></li>
+            <li class="active"><a href="NewMembers.html" style="color: white; font-size: large">تایید کاربران جدید</a></li>
+            <li><a href="RemoveMembers.html" style="color: white; font-size: large">مشاهده کاربران سایت</a></li>
+            <li><a href="ProfileEdit.html" style="color: white; font-size: large">ویرایش پروفایل</a></li>
+            <li><a href="FirstPage.html" style="color: white; font-size: large">خروج</a></li>
+
+
+        </ul>
+    </div>
+
+
+
+
+
+    <div class="col-3">
+        <div class="fa fa-bars" onclick="show()" id="menubar">
+        </div>
+    </div>
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-4">
+
+            <div id="accept">
+            <h3 id="gty" style="float: right;margin-top: 15%;margin-right: 20%"><b>نام و نام خانوادگی:</b><br> <p class="border">علی سمیعی</p>
+                <br><b style="float: right">سمت:</b><br><p class="border">مسِول دبیر خانه</p>
+                <br><b style="float: right">ایمیل:</b><br><p class="border">alisamiei@yhoo.com</p>
+                <br><b style="float: right">کد پرسنلی:</b><br><p class="border">95244596</p>
+                <button type="button" id="acc" onclick="accept()" style="background-color: green;margin-top: 12%;margin-right: 25%;width: 40%;color: white">تایید</button>
+                <button id="deny" onclick="deny()" style="background-color: red;width: 40%; margin-top: 5%;color: white">رد</button>
+            </h3>
+
+
+
+            </div>
+
+    </div>
+    <div class="col-md-5">
+        <img id="accepticon" src="https://img.icons8.com/color/200/000000/check-all.png">
+        <img id="denyicon" src="https://img.icons8.com/color/200/000000/cancel.png">
+        <img id="questionmarkicon" src="https://img.icons8.com/flat_round/200/000000/question-mark.png">
+    </div>
+</div>
+</body>
+</html>

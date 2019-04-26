@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://beyamooz.com/try_it_yourself/bootstrap/bootstrap-rtl.min_.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/profileEdit2.css">
+    <script src="js/js2.js"></script>
+
+    <link rel="stylesheet" href="css/studentPage.css">
+    <link rel="stylesheet" href="css/global.css">
+
+    <title>Employee Page</title>
+</head>
+<body>
+<div class="global">
+
+    <div id="verNav" class="col-md-3 d-md-block d-sm-none">
+
+        <div id="profile" class="container">
+            <img src="https://img.icons8.com/cotton/230/000000/name.png" id="imgc">
+        </div>
+
+
+
+        <div id="username">
+            <p style="color: white; text-align: center ; margin-top: 15px; font-size: large">مریم اصفهانی</p>
+        </div>
+
+        <ul>
+
+
+            <li><a href="EmployeePage.html" style="color: white;font-size: large "> صفحه اصلی </a></li>
+            <li class="active"><a style="color: white;font-size: large ">ویرایش پروفایل</a></li>
+            <li><a href="FirstPage2.html" style="color: white ;font-size: large ">خروج</a> </li>
+
+
+        </ul>
+    </div>
+
+
+
+
+
+    <div class="col-3">
+        <div class="fa fa-bars" onclick="show()" id="menubar">
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="edit">
+            <div id="picture">
+                <img src="./img/icon.png" style="width: 100%" alt="image">
+
+                <input type="file" id="browse">
+            </div>
+
+            <form class="form">
+                <div class="form-group">
+                    <label for="name" style="margin-top: 20px">نام و نام خانوادگی:</label>
+                    <input type="text" class="form-control" id="name" >
+                </div>
+                <div class="form-group">
+                    <label for="email">ایمیل:</label>
+                    <input type="email" class="form-control" id="email" >
+                </div>
+                <div class="form-group">
+                    <label for="pwd1">رمز عبور:</label>
+                    <input type="password" class="form-control" id="pwd1" >
+                </div>
+                <div class="form-group">
+                    <label for="pwd2">تکرار رمز عبور:</label>
+                    <input type="password" class="form-control" id="pwd2" >
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox"> مرا به خاطر داشته باش</label>
+                </div>
+                <button type="submit" class="btn btn-primary button">ارسال</button>
+
+            </form>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
