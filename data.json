@@ -1,0 +1,56 @@
+{
+    
+"users": [
+	{
+	"ID": "1",
+	"name": "maryam",
+	"familly": "esfahani",
+	"email": "maryam@gmail.com",
+	"role": "karmand",
+	"has_accepted": "ok"
+	},
+	{
+	"ID": "2",
+	"name": "mehrnoosh",
+	"familly": "shamsfard",
+	"email": "mehrnoosh@gmail.com",
+	"role": "modir",
+	"has_accepted": "ok"
+	},
+	{
+	"ID": "3",
+	"name": "ehsan",
+	"familly": "razazian",
+	"email": "ehsan@gmail.com",
+	"role": "student",
+	"has_accepted": "ok"
+	}
+           ]
+
+"darskhats": [
+	{
+	"ID": "1",
+	"type": "shekayat",
+	"sender_id": "3",
+	"receiver_id": "1",
+	"vaziat": "residegi",
+	"vote": "good",
+	"matn": "      ÓáÇã ãíÎæÇÓÊã äÓÈÊ Èå ÓÑÏ ÈæÏä ˜áÇÓ åÇ Ô˜ÇíÊ ˜äã æ Çíä ÑÇ ÈÎæÇåã ˜å ÇÑ ãã˜ä ÇÓÊ ÏÑ ÓíÓÊã ÑãÇíÔí ÏÇäÔ˜Ïå ãåÏÓí ˜ÇãíæÊÑ í˜ ÈÇÒÈíäí ÈİÑãÇííÏ æ ÊÚãíÑÇÊ ãÑÈæØå ÑÇ ÇäÌÇã ÏåíÏ ÑÇ ˜å Çíä ÓÑãÇ æÇŞÚÇ äÔÓÊä ÓÑ ˜áÇÓ íÇ ãÎÊá ˜ÑÏå æ æÇŞÚÇ íÇÏíÑí ÏÑ Çíä İÖÇí ÓÑÏ ˜ÇÑ ÓÎÊí ÇÓÊ ÈÇ ÊÔ˜Ñ.
+",
+	"optional_file": null
+	}
+           ]
+
+"javabs": [
+	{
+	"ID": "1",
+	"darkhast_id": "1",
+	"sender_id": "1",
+	"receiver_id": "3",
+	"matn": "ÇÓÎ: ÈÇ ÓáÇã ããäæä ÇÒ ÒÇÑÔ Çíä ãæÑÏ ÍÊãÇ ÏÑ ÏÓÊæÑ ˜ÇÑ ŞÑÇÑ ÑİÊå æ ÈÑÑÓí æ ííÑí ãíÔæÏ. ",
+	}
+           ]
+
+
+
+}
