@@ -1,11 +1,9 @@
 function myFunction() {
 
-    // var obj=JSON.parse(document.json);
     var toppings = [
-        ["1", "1396/12/3", "پیشنهاد", "رسیدگی شده", "مشاهده"]
-        , ["2", "1397/01/20", "پیشنهاد", "رسیدگی شده", "مشاهده"]
-        , ["3", "1397/12/3", "انتقاد", "در حال رسیدگی ", "مشاهده"]
-        , ["4", "1398/02/3", "درخواست", "رسیدگی نشده", "مشاهده"]
+        ["1", "1396/12/3", "شکایت", "مشاهده"]
+        , ["2", "1397/10/3", "انتقاد", "مشاهده"]
+        , ["3", "1397/12/25", "درخواست" ,"مشاهده"]
     ];
 
     if (toppings.length !== 0) {
@@ -14,13 +12,32 @@ function myFunction() {
         table.deleteRow(1);
         for (var i = 0; i < toppings.length; i++) {
             var rowItem = document.createElement("tr");
-            for (var j = 0; j < 5; j++) {
+            for (var j = 0; j < 4; j++) {
                 var tableItem = document.createElement("td");
                 tableItem.textContent = toppings[i][j];
-                if (j === 4) {
+                if (j === 3) {
                     tableItem.className = "choose";
-                    tableItem.id = "choose";
                     tableItem.onclick=f1
+                }
+                rowItem.appendChild(tableItem);
+            }
+
+            table.appendChild(rowItem);
+        }
+    }
+    var arr2=[];
+    if (arr2.length !== 0) {
+
+        var table = document.getElementById("table2");
+        table.deleteRow(1);
+        for (var i = 0; i < arr2.length; i++) {
+            var rowItem = document.createElement("tr");
+            for (var j = 0; j < 4; j++) {
+                var tableItem = document.createElement("td");
+                tableItem.textContent = arr2[i][j];
+                if (j === 3) {
+                    tableItem.className = "choose";
+                    tableItem.onclick=f2
                 }
                 rowItem.appendChild(tableItem);
             }
@@ -30,8 +47,11 @@ function myFunction() {
     }
 
 }
-function f1(){
-    location.replace("EachCaseOfUser.html")
+function f1() {
+    location.replace("SendAnswerToUser.html")
+}
+function f2() {
+    location.replace()
 }
 
 function date() {
