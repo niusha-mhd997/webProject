@@ -31,6 +31,10 @@
     direction: rtl;
     text-align: right;
 }
+.casesVerNav:hover{
+    cursor: pointer;
+}
+
 
 table,th,tr{
     border: 5px solid #005cbf;
@@ -58,7 +62,32 @@ th{
     margin-right: 10%;
     font-size: large;
     border: 5px solid #005cbf;
+}
+.othersTable{
+    width: 80%;
+    margin-top: 10%;
+    border-collapse: collapse;
+    margin-right: 10%;
+    font-size: large;
+    border: 5px solid #005cbf;
 
+}
+.membersTable{
+    width: 80%;
+    margin-top: 10%;
+    border-collapse: collapse;
+    margin-right: 10%;
+    font-size: large;
+    border: 5px solid #005cbf;
+
+}
+.oldMembers{
+    width: 80%;
+    margin-top: 10%;
+    border-collapse: collapse;
+    margin-right: 10%;
+    font-size: large;
+    border: 5px solid #005cbf;
 }
 .choose{
     color: #dc3545;
@@ -93,6 +122,4 @@ th{
     color: white;
     font-size: large;
 }
-#empty1{
-    /*visibility: hidden;*/
-}
+
